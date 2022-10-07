@@ -38,8 +38,8 @@ ul li {
 .banner::before {
   content: "";
   background-color: var(--color-yellow);
-  height: 25rem;
-  width: 20.9rem;
+  height: 28rem;
+  width: 23.3rem;
   position: absolute;
   right: 0;
   top: 0;
@@ -83,6 +83,7 @@ ul li {
   color: var(--color-black);
   font-weight: 600;
   margin-right: 3rem;
+  font-size: 3rem;
 }
 
 @media screen and (max-width: 1440px) {
@@ -160,6 +161,53 @@ ul li {
   .banner .banner-area .text p {
     font-size: 0.9rem;
   }
+}
+
+.banner .project-detail {
+  margin-top: 10rem;
+  padding-left: 3rem;
+}
+
+.banner .project-detail .item {
+  font-size: 1.4rem;
+  position: relative;
+  color: var(--color-black);
+  font-weight: 400;
+  opacity: 0.7;
+  max-width: 24rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .banner .project-detail .item {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .banner .project-detail .item {
+    font-size: 1.1rem;
+  }
+}
+
+.banner .project-detail .item strong {
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.banner .project-detail .item::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 0 15px 25px;
+  border-color: transparent transparent transparent #feda2c;
+  position: absolute;
+  left: -2rem;
+  top: 0;
+  margin: auto;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .section-bottom {
@@ -748,9 +796,21 @@ ul li {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .offers-and-references .table-area tbody tr td {
+    font-size: 1rem;
+  }
+}
+
 .offers-and-references .table-area tbody tr th {
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+  .offers-and-references .table-area tbody tr th {
+    font-size: 1.1rem;
+  }
 }
 
 .offers-and-references .table-area tbody tr th p {
@@ -831,6 +891,12 @@ ul li {
 @media screen and (max-width: 1440px) {
   .offers-and-references .companies img {
     max-width: 9rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .offers-and-references .companies img {
+    max-width: 8rem;
   }
 }
 

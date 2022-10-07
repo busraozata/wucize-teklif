@@ -62,8 +62,8 @@ $xxl-breakpoint: 1400px; //Extra extra large
     &::before {
         content: "";
         background-color: var(--color-yellow);
-        height: 25rem;
-        width: 20.9rem;
+        height: 28rem;
+        width: 23.3rem;
         position: absolute;
         right: 0;
         top: 0;
@@ -94,6 +94,7 @@ $xxl-breakpoint: 1400px; //Extra extra large
                 color: var(--color-black);
                 font-weight: 600;
                 margin-right: 3rem;
+                font-size: 3rem;
                 @media screen and(max-width:1440px) {
                     font-size: 2.1rem;
                 }
@@ -142,6 +143,42 @@ $xxl-breakpoint: 1400px; //Extra extra large
                 @media screen and(max-width:$xl-breakpoint) {
                     font-size: 0.9rem;
                 }
+            }
+        }
+    }
+    .project-detail{
+        margin-top: 10rem;
+        padding-left: 3rem;
+        .item {
+            font-size: 1.4rem;
+            position: relative;
+            color: var(--color-black);
+            font-weight: 400;
+            opacity: 0.7;
+            max-width: 24rem;
+            @media screen and(max-width:1440px) {
+                font-size: 1.3rem;
+            }
+            @media screen and(max-width:$xl-breakpoint) {
+                font-size: 1.1rem;
+            }
+            strong {
+                font-weight: 700;
+                color: var(--color-black);
+            }
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 15px 0 15px 25px;
+                border-color: transparent transparent transparent #feda2c;
+                position: absolute;
+                left: -2rem;
+                top: 0;
+                margin: auto;
+                transition: all 0.5s;
             }
         }
     }
@@ -463,10 +500,16 @@ $xxl-breakpoint: 1400px; //Extra extra large
                     @media screen and(max-width:1440px) {
                         width: 20%;
                     }
+                    @media screen and(max-width:$xl-breakpoint) {
+                        font-size: 1rem;
+                    }
                 }
                 th {
                     font-size: 1.2rem;
                     font-weight: 600;
+                    @media screen and(max-width:$xl-breakpoint) {
+                        font-size: 1.1rem;
+                    }
                     p {
                         font-weight: 300;
                         margin-top: 0.5rem;
@@ -507,6 +550,9 @@ $xxl-breakpoint: 1400px; //Extra extra large
             object-fit: cover;
             @media screen and(max-width:1440px) {
                 max-width: 9rem;
+            }
+            @media screen and(max-width:$xl-breakpoint) {
+                max-width: 8rem;
             }
         }
     }
